@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef structnode
+{
+	int num;
+	struct node *next;
+}node;
+
+void inesrtion(node *list,node *pos);
+void deletion(node *list,node *pos);
+void searchdata(node *list,int data);
+void searchindex(node *list,int pos);
+void printlist(node *list);
+
+int main()
+{
+	int i,n;
+	printf("Enter the size of Linked list:")
+	scanf("%d",&n);
+	node *list = malloc (size of (node));
+	list->next = NULL;
+	for (i=0;i<n;i++)
+	{
+		int data;
+		node *temp = list;
+		node *newnode = (size of (node));
+		for (i=0;i<n;i++)
+		{
+			int data ;
+			node *temp = next;
+			node *newnode = malloc(size of (node));
+			printf("Enter data:");
+			scanf("%d",&data);
+			newnode->num=data;
+			while (temp->next!=NULL)
+			{
+				temp=temp->next;
+			}
+			temp->next=newnode;
+			newnode->next=NULL;	
+		}
+		printlist(list);
+		int index,ch,element,index2;
+		node *pos=NULL;
+		printf("\n Search by index (1) \n Search by element (2) \n Insertion (3) \n Deletion (4) \n Display (5) \n Exit (6)\n");
+		scanf("%d",&ch);
+		switch(ch)
+		{
+			case 1:
+				printf("Search by index:");
+				scanf("%d",&index);
+				
+		}
+	}
+}
